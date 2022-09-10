@@ -7,11 +7,16 @@ import TeamMembers from "../TeamMembers";
 import Customers from "../site";
 import Footer from "../Footer";
 
+import headerImage from "../../images/MainHeader.svg";
+
 const AboutUsPage = () => {
+  const headerText =
+    "راهی آسان، مطمئن و کم هزینه برای ورود کسب و کارها به دنیای اینترنت";
+
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Header></Header>
+      <Header headerImage={headerImage} headerText={headerText}></Header>
       <Descriptions></Descriptions>
       <TeamMembers></TeamMembers>
       <Customers></Customers>
