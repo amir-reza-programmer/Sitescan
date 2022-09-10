@@ -7,16 +7,20 @@ import TeamMembers from "../TeamMembers";
 import Customers from "../Customers";
 import Footer from "../Footer";
 
-import headerImage from "../../images/MainHeader.svg";
+import mainHeader from "../../images/Headers/MainHeader.svg";
 
 const AboutUsPage = () => {
-  const headerText =
-    "راهی آسان، مطمئن و کم هزینه برای ورود کسب و کارها به دنیای اینترنت";
+  const headerText = "راهی آسان، مطمئن و کم هزینه";
+  const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
 
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Header headerImage={headerImage} headerText={headerText}></Header>
+      <Header
+        headerImage={mainHeader}
+        headerText={headerText}
+        headerText_2={headerText_2}
+      ></Header>
       <Descriptions></Descriptions>
       <TeamMembers></TeamMembers>
       <Customers></Customers>

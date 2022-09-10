@@ -7,16 +7,20 @@ import Cards from "../Cards";
 import Projects from "../Projects";
 import Footer from "../Footer";
 
-import headerImage from "../../images/MainHeader.svg";
+import mainHeader from "../../images/Headers/MainHeader.svg";
 
 const HomePage = () => {
-  const headerText =
-    "راهی آسان، مطمئن و کم هزینه برای ورود کسب و کارها به دنیای اینترنت";
+  const headerText = "راهی آسان، مطمئن و کم هزینه";
+  const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
 
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Header headerImage={headerImage} headerText={headerText}></Header>
+      <Header
+        headerImage={mainHeader}
+        headerText={headerText}
+        headerText_2={headerText_2}
+      ></Header>
       <DevSteps></DevSteps>
       <Cards></Cards>
       <Projects></Projects>

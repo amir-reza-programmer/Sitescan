@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Header from "../Header";
 
 import styles from "./Pages.module.css";
-import headerImage from "../../images/FAQHeader.svg";
+import FAQHeader from "../../images/Headers/FAQHeader.svg";
 
 const FAQPage = () => {
   const headerText = "سوالات متداول";
@@ -13,7 +13,7 @@ const FAQPage = () => {
     <Fragment>
       <Navbar></Navbar>
       <Header
-        headerImage={headerImage}
+        headerImage={FAQHeader}
         headerText={headerText}
         additionalClass={styles.faq_header_text}
       ></Header>
