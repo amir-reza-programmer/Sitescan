@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Header HeaderImage={headerImage} HeaderText={headerText}></Header>
+      <Header headerImage={headerImage} headerText={headerText}></Header>
       <DevSteps></DevSteps>
       <Cards></Cards>
       <Projects></Projects>

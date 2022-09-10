@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Header from "../Header";
 import Descriptions from "../Descriptions";
 import TeamMembers from "../TeamMembers";
-import Customers from "../site";
+import Customers from "../Customers";
 import Footer from "../Footer";
 
 import headerImage from "../../images/MainHeader.svg";

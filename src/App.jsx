@@ -33,7 +33,7 @@ function App() {
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="faq" element={<FAQPage />} />
           <Route path="contact_us" element={<ContactUsPage />} />
-          <Route path="/" element={<Navigate replace to="faq" />} />
+          <Route path="/" element={<Navigate replace to="home" />} />
         </Routes>
       </BrowserRouter>
     </Fragment>
