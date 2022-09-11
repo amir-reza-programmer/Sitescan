@@ -6,7 +6,7 @@ const Card = ({ image, title, description, colors }) => {
     linear-gradient(to bottom right, ${colors[0]}, ${colors[1]}) border-box`,
   };
   const titleStyle = {
-    background: `-webkit-linear-gradient(${colors[0]}, ${colors[1]})`,
+    background: `-webkit-linear-gradient(left, ${colors[0]}, ${colors[1]})`,
   };
   return (
     <div style={backgroundStyle} className={styles.card}>
