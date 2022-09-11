@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import Icon from "../pics/icon.svg";
+import Icon from "../images/icon.svg";
 
 const Navbar = ({ active }) => {
   const itemStyle = (name, color) => {
