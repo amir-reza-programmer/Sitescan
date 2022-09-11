@@ -15,7 +15,7 @@ const HomePage = () => {
 
   return (
     <Fragment>
-      <Navbar></Navbar>
+      <Navbar active="home"></Navbar>
       <Header
         headerImage={mainHeader}
         headerText={headerText}

@@ -11,7 +11,7 @@ const FAQPage = () => {
 
   return (
     <Fragment>
-      <Navbar></Navbar>
+      <Navbar active="faq"></Navbar>
       <Header
         headerImage={FAQHeader}
         headerText={headerText}

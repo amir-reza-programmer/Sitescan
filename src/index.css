@@ -19,4 +19,6 @@
 }
 body{
   background-color: #003459;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }

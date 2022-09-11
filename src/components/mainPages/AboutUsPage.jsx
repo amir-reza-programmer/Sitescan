@@ -15,7 +15,7 @@ const AboutUsPage = () => {
 
   return (
     <Fragment>
-      <Navbar></Navbar>
+      <Navbar active="about_us"></Navbar>
       <Header
         headerImage={mainHeader}
         headerText={headerText}
