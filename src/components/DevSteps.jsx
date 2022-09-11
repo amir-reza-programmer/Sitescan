@@ -1,7 +1,7 @@
-import styles from "./DevSteps.module.css"
+import styles from "./DevSteps.module.css";
 
 const DevSteps = () => {
-  return <di>DevSteps</di>;
+  return <div>DevSteps</div>;
 };
 
 export default DevSteps;

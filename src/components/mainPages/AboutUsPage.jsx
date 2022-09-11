@@ -4,14 +4,23 @@ import Navbar from "../Navbar";
 import Header from "../Header";
 import Descriptions from "../Descriptions";
 import TeamMembers from "../TeamMembers";
-import Customers from "../site";
+import Customers from "../Customers";
 import Footer from "../Footer";
 
+import mainHeader from "../../images/Headers/MainHeader.svg";
+
 const AboutUsPage = () => {
+  const headerText = "راهی آسان، مطمئن و کم هزینه";
+  const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
+
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Header></Header>
+      <Header
+        headerImage={mainHeader}
+        headerText={headerText}
+        headerText_2={headerText_2}
+      ></Header>
       <Descriptions></Descriptions>
       <TeamMembers></TeamMembers>
       <Customers></Customers>
