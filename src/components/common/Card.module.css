@@ -1,0 +1,25 @@
+.card {
+    gap: 6px;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    border: solid transparent;
+    border-radius: 10px;
+    direction: rtl;
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__img{
+    transform: scale(0.7);
+}
+.card__title{
+    font-weight: bold;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+.card__description{
+    text-align: center;
+    color: white;
+}
