@@ -2,11 +2,12 @@ import { Fragment } from "react";
 
 import Navbar from "../Navbar";
 import Header from "../Header";
+import FAQ from "../FAQSection";
 
 import styles from "./Pages.module.css";
 import FAQHeader from "../../images/Headers/FAQHeader.svg";
 
-const FAQPage = () => {
+const FAQPage = (props) => {
   const headerText = "سوالات متداول";
 
   return (
@@ -17,6 +18,10 @@ const FAQPage = () => {
         headerText={headerText}
         additionalClass={styles.faq_header_text}
       ></Header>
+      <FAQ
+        firstVisibility={props.firstVisibility}
+        onFirstVisibilityIsGone={props.onFirstVisibilityIsGone}
+      ></FAQ>
     </Fragment>
   );
 };
