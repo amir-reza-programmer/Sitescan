@@ -1,4 +1,4 @@
-import tempUser from "../images/AboutUsPage/TempUser.png";
+import tempUser from "../images/TeamMembres/TempUser.png";
 
 const teamMembers = [
   {

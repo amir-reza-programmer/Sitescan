@@ -24,6 +24,11 @@ function App() {
 
   const mobielView = width <= 768;
 
+  const [firstVisibility, setFirstVisibility] = useState(true);
+  const firstVisibilityIsGone = () => {
+    setFirstVisibility(false);
+  };
+
   return (
     <Fragment>
       <BrowserRouter>
@@ -31,7 +36,15 @@ function App() {
           <Route path="home" element={<HomePage />} />
           <Route path="about_us" element={<AboutUsPage />} />
           <Route path="projects" element={<ProjectsPage />} />
-          <Route path="faq" element={<FAQPage />} />
+          <Route
+            path="faq"
+            element={
+              <FAQPage
+                firstVisibility={firstVisibility}
+                onFirstVisibilityIsGone={firstVisibilityIsGone}
+              />
+            }
+          />
           <Route path="contact_us" element={<ContactUsPage />} />
           <Route path="/" element={<Navigate replace to="home" />} />
         </Routes>

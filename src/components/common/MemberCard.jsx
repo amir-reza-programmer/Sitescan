@@ -1,6 +1,6 @@
 import styles from "./MemberCard.module.css";
-import Linkedin from "../images/AboutUsPage/Linkedin.svg";
-import Github from "../images/AboutUsPage/Github.svg";
+import Linkedin from "../../images/TeamMembres/Linkedin.svg";
+import Github from "../../images/TeamMembres/Github.svg";
 
 const MemberCard = (props) => {
   return (
