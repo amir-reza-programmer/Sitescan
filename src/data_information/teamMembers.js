@@ -1,23 +1,23 @@
-import tempUser from "../images/Headers/TempUser.png";
+import tempUser from "../images/AboutUsPage/TempUser.png";
 
 const teamMembers = [
   {
     pic: tempUser,
-    fullName: "نام و نام خانوادگی",
+    fullname: "نام و نام خانوادگی",
     position: "سمت",
     linkedin: "",
     github: "",
   },
   {
     pic: tempUser,
-    fullName: "نام و نام خانوادگی",
+    fullname: "نام و نام خانوادگی",
     position: "سمت",
     linkedin: "",
     github: "",
   },
   {
     pic: tempUser,
-    fullName: "نام و نام خانوادگی",
+    fullname: "نام و نام خانوادگی",
     position: "سمت",
     linkedin: "",
     github: "",

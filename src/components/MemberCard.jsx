@@ -7,7 +7,7 @@ const MemberCard = (props) => {
     <section className={styles.member_card}>
       <img className={styles.member_img} src={props.pic}></img>
       <div className={styles.info}>
-        <p className={styles.full_name}>{props.fullName}</p>
+        <p className={styles.full_name}>{props.fullname}</p>
         <p className={styles.position}>{props.position}</p>
         <div className={styles.links}>
           <a href={props.linkedin}>
