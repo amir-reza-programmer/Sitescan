@@ -22,12 +22,12 @@ function App() {
     };
   }, []);
 
-  const mobielView = width <= 768;
+  //const mobielView = width <= 768;   -> "it will be used in future progeressing."
 
-  const [firstVisibility, setFirstVisibility] = useState(true);
-  const firstVisibilityIsGone = () => {
-    setFirstVisibility(false);
-  };
+  // const [firstVisibility, setFirstVisibility] = useState(true);   -> "it will be used in future progeressing."
+  // const firstVisibilityIsGone = () => {
+  //   setFirstVisibility(false);
+  // };
 
   return (
     <Fragment>
@@ -36,15 +36,7 @@ function App() {
           <Route path="home" element={<HomePage />} />
           <Route path="about_us" element={<AboutUsPage />} />
           <Route path="projects" element={<ProjectsPage />} />
-          <Route
-            path="faq"
-            element={
-              <FAQPage
-                firstVisibility={firstVisibility}
-                onFirstVisibilityIsGone={firstVisibilityIsGone}
-              />
-            }
-          />
+          <Route path="faq" element={<FAQPage />} />
           <Route path="contact_us" element={<ContactUsPage />} />
           <Route path="/" element={<Navigate replace to="home" />} />
         </Routes>

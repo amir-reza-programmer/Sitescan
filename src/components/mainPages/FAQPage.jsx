@@ -7,7 +7,7 @@ import FAQ from "../FAQSection";
 import styles from "./Pages.module.css";
 import FAQHeader from "../../images/Headers/FAQHeader.svg";
 
-const FAQPage = (props) => {
+const FAQPage = () => {
   const headerText = "سوالات متداول";
 
   return (
@@ -18,10 +18,7 @@ const FAQPage = (props) => {
         headerText={headerText}
         additionalClass={styles.faq_header_text}
       ></Header>
-      <FAQ
-        firstVisibility={props.firstVisibility}
-        onFirstVisibilityIsGone={props.onFirstVisibilityIsGone}
-      ></FAQ>
+      <FAQ></FAQ>
     </Fragment>
   );
 };

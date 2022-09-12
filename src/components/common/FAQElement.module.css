@@ -11,7 +11,7 @@
 }
 
 .decrease_height {
-  animation: decrease_height 600ms ease-out forwards;
+  animation: decrease_height 500ms ease-out forwards;
 }
 
 @keyframes decrease_height {

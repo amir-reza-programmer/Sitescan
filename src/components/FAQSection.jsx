@@ -3,19 +3,13 @@ import faqList from "../data_information/faqList";
 
 import styles from "./FAQSection.module.css";
 
-const FAQSection = (props) => {
+const FAQSection = () => {
   return (
-      <section className={styles.faq_section}>
-        {faqList.map((faq, index) => (
-          <FAQElement
-            key={index}
-            id={index}
-            firstVisibility={props.firstVisibility}
-            onFirstVisibilityIsGone={props.onFirstVisibilityIsGone}
-            {...faq}
-          ></FAQElement>
-        ))}
-      </section>
+    <section className={styles.faq_section}>
+      {faqList.map((faq, index) => (
+        <FAQElement key={index} id={index} {...faq}></FAQElement>
+      ))}
+    </section>
   );
 };
 
