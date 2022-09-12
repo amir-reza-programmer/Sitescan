@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import styles from "./FAQElement.module.css";
-import visib from "../../../Common/firstVisibility.module.css";
+import visib from "../../../common/firstVisibility.module.css";
 
 const FAQElement = (props) => {
   const [seeAnswer, setSeeAsnwer] = useState(false);

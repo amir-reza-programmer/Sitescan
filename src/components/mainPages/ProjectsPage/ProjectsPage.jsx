@@ -1,4 +1,4 @@
-import Navbar from "../../Common/Navbar";
+import Navbar from "../../common/Navbar";
 import ProjectsSection from "./ProjectsSection";
 
 const ProjectsPage = () => {

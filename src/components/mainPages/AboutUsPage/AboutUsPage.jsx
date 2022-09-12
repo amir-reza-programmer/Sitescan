@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 
-import Navbar from "../../Common/Navbar";
-import Header from "../../Common/Header";
+import Navbar from "../../common/Navbar";
+import Header from "../../common/Header";
 import Descriptions from "./Descriptions";
 import TeamMembers from "./TeamMembers";
 import Customers from "./Customers";
-import Footer from "../../Common/Footer"
+import Footer from "../../common/Footer"
 
 import mainHeader from "../../../images/Headers/MainHeader.svg";
 

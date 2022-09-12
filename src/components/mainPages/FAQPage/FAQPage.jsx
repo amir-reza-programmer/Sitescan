@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-import Navbar from "../../Common/Navbar";
-import Header from "../../Common/Header";
+import Navbar from "../../common/Navbar";
+import Header from "../../common/Header";
 import FAQ from "./FAQSection";
 
 import styles from "../Pages.module.css";
