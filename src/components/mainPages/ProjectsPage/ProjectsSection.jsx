@@ -1,4 +1,4 @@
-import projects from "../data_information/projects";
+import projects from "../../../data_information/projects";
 
 import styles from "./ProjectsSection.module.css";
 

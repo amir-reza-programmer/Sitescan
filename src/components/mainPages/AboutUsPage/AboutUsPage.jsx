@@ -1,13 +1,13 @@
 import { Fragment } from "react";
 
-import Navbar from "../Navbar";
-import Header from "../Header";
-import Descriptions from "../Descriptions";
-import TeamMembers from "../TeamMembers";
-import Customers from "../Customers";
-import Footer from "../Footer";
+import Navbar from "../../Common/Navbar";
+import Header from "../../Common/Header";
+import Descriptions from "./Descriptions";
+import TeamMembers from "./TeamMembers";
+import Customers from "./Customers";
+import Footer from "../../Common/Footer"
 
-import mainHeader from "../../images/Headers/MainHeader.svg";
+import mainHeader from "../../../images/Headers/MainHeader.svg";
 
 const AboutUsPage = () => {
   const headerText = "راهی آسان، مطمئن و کم هزینه";

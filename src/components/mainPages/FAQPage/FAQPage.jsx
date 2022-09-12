@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 
-import Navbar from "../Navbar";
-import Header from "../Header";
-import FAQ from "../FAQSection";
+import Navbar from "../../Common/Navbar";
+import Header from "../../Common/Header";
+import FAQ from "./FAQSection";
 
-import styles from "./Pages.module.css";
-import FAQHeader from "../../images/Headers/FAQHeader.svg";
+import styles from "../Pages.module.css";
+import FAQHeader from "../../../images/Headers/FAQHeader.svg";
 
 const FAQPage = () => {
   const headerText = "سوالات متداول";

@@ -1,13 +1,13 @@
 import { Fragment } from "react";
 
-import Navbar from "../Navbar";
-import Header from "../Header";
-import DevSteps from "../DevSteps";
-import Cards from "../Cards";
-import Projects from "../Projects";
-import Footer from "../Footer";
+import Navbar from "../../Common/Navbar";
+import Header from "../../Common/Header";
+import DevSteps from "./DevSteps";
+import Cards from "./Cards";
+import Projects from "./Projects";
+import Footer from "../../Common/Footer";
 
-import mainHeader from "../../images/Headers/MainHeader.svg";
+import mainHeader from "../../../images/Headers/MainHeader.svg";
 
 const HomePage = () => {
   const headerText = "راهی آسان، مطمئن و کم هزینه";

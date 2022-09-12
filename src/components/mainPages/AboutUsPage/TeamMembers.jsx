@@ -1,5 +1,5 @@
 import MemberCard from "./common/MemberCard";
-import teamMembers from "../data_information/teamMembers";
+import teamMembers from "../../../data_information/teamMembers";
 
 import styles from "./TeamMembers.module.css";
 

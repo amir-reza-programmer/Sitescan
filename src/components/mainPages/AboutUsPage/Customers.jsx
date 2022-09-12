@@ -1,4 +1,4 @@
-import customers from "../data_information/customers";
+import customers from "../../../data_information/customers";
 
 import styles from "./Customers.module.css";
 

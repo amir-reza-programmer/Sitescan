@@ -1,6 +1,6 @@
 import styles from "./Cards.module.css";
 
-import CardsData from "../data_information/cards";
+import CardsData from "../../../data_information/cards";
 import Card from "./common/Card";
 
 const Cards = () => {

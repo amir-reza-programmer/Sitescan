@@ -1,5 +1,5 @@
 import FAQElement from "./common/FAQElement";
-import faqList from "../data_information/faqList";
+import faqList from "../../../data_information/faqList";
 
 import styles from "./FAQSection.module.css";
 
