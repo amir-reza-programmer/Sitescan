@@ -1,0 +1,37 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 4vh auto;
+    gap: 3vh;
+    padding: 3vh 0 6vh 0;
+    background-color: #002036;
+}
+.projects__top h2{
+    background-image: linear-gradient(to left, #0090c7, #9ce4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.3vw;
+}
+.projects__bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    /* align-content: center;*/
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.brochure{
+    display: flex;
+}
+.brochure img{
+    width: 43vw;
+}

@@ -1,0 +1,39 @@
+.project{
+    display: flex;
+    flex-direction: row;
+    background-color: #002A48;
+    padding: 0.5vw;
+    border-radius: 10px;
+    /* width: fit-content; */
+    justify-content: space-between;
+}
+.project__right{
+    display: flex;
+}
+.square{
+    width: 3vw;
+    height: 3vw;
+    margin: 1vh;
+    border: solid #00A8E8;
+}
+.title-parent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-parent>div:first-of-type{
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+.title{
+    font-size: 1.6vw;
+}
+.details{
+    font-weight: 300;
+    color: #00A8E8;
+    font-size: 1vw;
+}
+.project__left{
+    padding-top: 0.4vw;
+}
