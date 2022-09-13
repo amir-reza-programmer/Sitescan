@@ -6,30 +6,16 @@ import Project from "./common/Project";
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  let temp = 0;
-  let imageInterval;
-  // useEffect(() => {
-  //   imageInterval = setInterval(() => {
-  //     setActiveIndex((prevState) => {
-  //       console.log("prev: ", prevState);
-  //       console.log("next: ", (prevState + 1) % projects.length);
-  //       return (prevState + 1) % projects.length;
-  //     });
-  //   }, 5000);
-  // }, []);
 
-  // useEffect(() => {
-  //   clearInterval(imageInterval);
-  //   setTimeout(() => {
-  //     imageInterval = setInterval(() => {
-  //       setActiveIndex((prevState) => {
-  //         console.log("prev: ", prevState);
-  //         console.log("next: ", (prevState + 1) % projects.length);
-  //         return (prevState + 1) % projects.length;
-  //       });
-  //     }, 5000);
-  //   }, 5000);
-  // }, [activeIndex]);
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setActiveIndex((prevState) => {
+        return (prevState + 1) % projects.length;
+      });
+    }, 5000);
+    return () => clearInterval(imageInterval);
+  }, [activeIndex]);
+
   const changIndex = (index) => {
     setActiveIndex(index);
   };
@@ -43,6 +29,7 @@ const Projects = () => {
         <div className={styles.items}>
           {projects.map((project, index) => (
             <Project
+              key={index}
               index={index}
               active={activeIndex === index}
               title={project.title}
