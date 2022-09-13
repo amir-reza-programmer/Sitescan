@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <div className={styles.projects__top}>
-        <h2>پروژه‌های ما</h2>
+        <h2>our projects</h2>
       </div>
       <div className={styles.projects__bottom}>
         <div className={styles.items}>
