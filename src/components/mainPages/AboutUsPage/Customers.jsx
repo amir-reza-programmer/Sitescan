@@ -7,8 +7,8 @@ const Customers = () => {
     <section className={styles.customer_section}>
       <p className={styles.title}>مشتریان ما</p>
       <div className={styles.customers}>
-        {customers.map((customer, index) => (
-          <img key={index} src={customer}></img>
+        {customers.map((customer) => (
+          <img key={customer.id} src={customer}></img>
         ))}
       </div>
     </section>

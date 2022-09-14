@@ -3,9 +3,9 @@ import projects from "../../../data_information/projects";
 import styles from "./ProjectsSection.module.css";
 
 const ProjectsSection = () => {
-  const rtlMode = (project, index) => {
+  const rtlMode = (project) => {
     return (
-      <div className={styles.project} key={index}>
+      <div className={styles.project} key={project.id}>
         <div>
           <p className={styles.rtl_header_title}>طراحی سایت</p>
           <p className={styles.rtl_proj_title}>{project.title}</p>
@@ -19,9 +19,9 @@ const ProjectsSection = () => {
     );
   };
 
-  const ltrMode = (project, index) => {
+  const ltrMode = (project) => {
     return (
-      <div className={styles.project} key={index}>
+      <div className={styles.project} key={project.id}>
         <img src={project.pic}></img>
         <div>
           <p className={styles.ltr_header_title}>طراحی سایت</p>
@@ -41,9 +41,9 @@ const ProjectsSection = () => {
       <div>
         {projects.map((project, index) => {
           if (index % 2 === 0) {
-            return rtlMode(project, index);
+            return rtlMode(project);
           }
-          return ltrMode(project, index);
+          return ltrMode(project);
         })}
       </div>
     </div>
