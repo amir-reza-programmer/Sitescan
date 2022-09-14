@@ -34,10 +34,15 @@ const Navbar = ({ active }) => {
           <ul>
             <li>
               <div>
-                <Link to="/contact_us">تماس با ما</Link>
+                <Link
+                  style={itemColor("contact_us", "FF9712")}
+                  to="/contact_us"
+                >
+                  تماس با ما
+                </Link>
                 <div
                   className={styles.blure}
-                  style={itemStyle("contact_us", "ffff")}
+                  style={itemStyle("contact_us", "FF9712")}
                 ></div>
               </div>
             </li>

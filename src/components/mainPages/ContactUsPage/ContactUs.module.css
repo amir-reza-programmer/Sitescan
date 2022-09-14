@@ -1,0 +1,14 @@
+.contact-us {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 10vh auto 2vh auto;
+}
+.right {
+    max-width: 35vw;
+}
+.left {
+    max-width: 35vw;
+}
