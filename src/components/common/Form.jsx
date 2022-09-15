@@ -13,6 +13,7 @@ const Form = ({ title }) => {
           rows="5"
           placeholder="متن سوال"
         ></textarea>
+        <input type="button" value="ارسال" />
       </form>
     </div>
   );

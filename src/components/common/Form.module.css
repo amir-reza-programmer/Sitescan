@@ -30,3 +30,14 @@
 .form-parent textarea:focus-visible{
     outline: none;
 }
+.form-parent form input:last-of-type{
+    width: 10vw;
+    color: white;
+    background-color: #007AA8;
+    font-weight: 300;
+    padding: 0.25vw;
+    cursor: pointer;
+}
+.form-parent form input:last-of-type:active{
+    border-color: white;
+}
