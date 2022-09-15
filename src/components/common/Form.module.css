@@ -1,0 +1,32 @@
+.title{
+    font-size: 1.65vw;
+    color: white;
+}
+.form-parent form{
+    width: 30vw;
+}
+.form-parent input,
+.form-parent textarea {
+    width: 100%;
+    border: solid #007AA8 0.15vw;
+    padding: 0.15vw;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #2EC5FF;
+    font-weight: 300;
+    margin: 3px auto;
+    font-size: 1.13vw;
+}
+.form-parent textarea{
+    height: 16vw;
+}
+.form-parent input::placeholder,
+.form-parent textarea::placeholder{
+    font-size: 1.13vw;
+    font-weight: 300;
+    color: #2EC5FF;
+}
+.form-parent input:focus-visible,
+.form-parent textarea:focus-visible{
+    outline: none;
+}

@@ -1,14 +1,29 @@
 .contact-us {
-    margin-top: 10vh;
     display: flex;
+    padding-top: 10vh;
     justify-content: center;
     align-items: center;
-    gap: 10vw;
+    gap: 13vw;
     margin: 10vh auto 2vh auto;
 }
-.right {
+/* .right {
     max-width: 35vw;
 }
 .left {
     max-width: 35vw;
+} */
+.contact p{
+    color: white;
+    text-align: right;
+    direction: ltr;
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+
+.map iframe{
+    border: solid 0.2vw #007AA8;
+    border-radius: 5px;
+    width: 30vw;
+    height: 19vw;
+    margin-top: 1vw;
 }
