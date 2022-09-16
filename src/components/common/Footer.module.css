@@ -1,0 +1,40 @@
+.footer_section {
+  padding: 5vh 0;
+  color: #2ec5ff;
+  background-color: #002036;
+  text-align: center;
+}
+
+.head_title {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.8vw;
+  margin-bottom: 3vh;
+}
+
+.title_text {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: white;
+}
+
+.address_number {
+  font-weight: 300;
+}
+
+.address {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-bottom: 1vh;
+}
+
+.number {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-bottom: 3vh;
+}
+
+.icon {
+  width: 2.8vw;
+  margin: 0 1vw;
+}

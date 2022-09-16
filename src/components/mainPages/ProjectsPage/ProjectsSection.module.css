@@ -41,6 +41,7 @@
   padding: 1.2vh 1.6vw;
   color: white;
   background-color: #00a8e8;
+  border: none;
   border-radius: 0.5rem;
 }
 
@@ -71,5 +72,6 @@
   padding: 1.2vh 1.6vw;
   color: white;
   background-color: #00a8e8;
+  border: none;
   border-radius: 0.5rem;
 }
