@@ -25,6 +25,22 @@ const teamMembers = [
     linkedin: "",
     github: "",
   },
+  {
+    id: 3,
+    pic: tempUser,
+    fullname: "نام و نام خانوادگی",
+    position: "سمت",
+    linkedin: "",
+    github: "",
+  },
+  {
+    id: 4,
+    pic: tempUser,
+    fullname: "نام و نام خانوادگی",
+    position: "سمت",
+    linkedin: "",
+    github: "",
+  },
 ];
 
 export default teamMembers;

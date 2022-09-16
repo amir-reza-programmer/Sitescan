@@ -1,15 +1,18 @@
-import React from "react";
-import Footer from "../../common/Footer";
+import { Fragment } from "react";
+
 import Navbar from "../../common/Navbar";
 import ContactUs from "./ContactUs";
+import JoinUs from "../../common/JoinsUs";
+import Footer from "../../common/Footer";
 
 const ContactUsPage = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <Navbar active="contact_us" />
       <ContactUs />
+      <JoinUs />
       <Footer />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

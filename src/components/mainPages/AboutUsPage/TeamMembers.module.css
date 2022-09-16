@@ -17,6 +17,8 @@
 
 .team_members{
     display: flex;
-    justify-content: space-around;
-    margin: 5vh 5vw 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+    margin: 5vh 12vw 0;
 }

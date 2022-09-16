@@ -1,0 +1,20 @@
+.join_us_section {
+  margin: 7vh 0;
+  text-align: center;
+  background-color: #003459;
+}
+
+.text {
+    font-size: 1.4vw;
+  margin-bottom: 4vh;
+  color: white;
+}
+
+.btn {
+  font-size: 1.1vw;
+  padding: 1.5vh 1.3vw;
+  background-color: #00a8e8;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}

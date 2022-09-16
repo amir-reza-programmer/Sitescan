@@ -5,6 +5,7 @@ import Header from "../../common/Header";
 import DevSteps from "./DevSteps";
 import Cards from "./Cards";
 import Projects from "./Projects";
+import JoinUs from "../../common/JoinsUs";
 import Footer from "../../common/Footer";
 
 import mainHeader from "../../../images/Headers/MainHeader.svg";
@@ -24,6 +25,7 @@ const HomePage = () => {
       <DevSteps></DevSteps>
       <Cards></Cards>
       <Projects></Projects>
+      <JoinUs></JoinUs>
       <Footer></Footer>
     </Fragment>
   );
