@@ -43,6 +43,7 @@
   background-color: #00a8e8;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .ltr_header_title {
@@ -74,4 +75,5 @@
   background-color: #00a8e8;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
