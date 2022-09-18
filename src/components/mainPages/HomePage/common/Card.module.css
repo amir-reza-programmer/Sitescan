@@ -1,5 +1,5 @@
 .card {
-  min-height: 34.5vh;
+  height: 21vw;
   gap: 6px;
   padding: 0 1.5vw;
   padding-bottom: 1.5vw;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 .card__img{
-    width: 8.5vw;
+    width: 8vw;
     height: auto;
     margin: 4vh 2vh 1vh 2vh;
 }
