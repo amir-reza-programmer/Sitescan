@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Icon from "../../images/SitescanIcon.svg";
+import IranFlag from "../../images/IranFlag.svg";
 
 const Navbar = ({ active }) => {
   const itemStyle = (name, color) => {
@@ -94,7 +95,9 @@ const Navbar = ({ active }) => {
         </div>
         <div className={styles.nav__left}>
           <ul>
-            <li>فارسی</li>
+            <li>
+              <span>فارسی</span> <img src={IranFlag} alt="iran flag" />
+            </li>
           </ul>
         </div>
       </nav>

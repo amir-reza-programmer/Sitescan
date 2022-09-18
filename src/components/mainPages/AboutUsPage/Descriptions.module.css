@@ -1,0 +1,16 @@
+.descriptions{
+    margin: 10vh auto 13vh auto;
+}
+.top h2{
+    text-align: center;
+    margin: auto 15vw;
+    font-weight: 300;
+    color: white;
+    font-size: 1.4vw;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    margin: 7vh 14vw;
+    gap: 5vw;
+}

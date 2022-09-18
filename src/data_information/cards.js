@@ -1,6 +1,8 @@
 import pic_1 from "../images/Cards/pic_1.svg";
 import pic_2 from "../images/Cards/pic_2.svg";
 import pic_3 from "../images/Cards/pic_3.svg";
+import pic_4 from "../images/Cards/pic_4.svg";
+import pic_5 from "../images/Cards/pic_5.svg";
 
 const CardsData = [
   {
@@ -14,7 +16,7 @@ const CardsData = [
   {
     id: 2,
     title: "پشتیبانی کامل",
-    image: pic_1,
+    image: pic_2,
     description:
       "تیم پشتیبانی ما در تمام روزهای هفته از طریق تلفن و واتس‌اپ پاسخگوی شماست.",
     colors: ["#F48EDF", "#FF5F46"],
@@ -22,7 +24,7 @@ const CardsData = [
   {
     id: 3,
     title: "ثبت دامنه اختصاصی",
-    image: pic_1,
+    image: pic_3,
     description:
       "می‌توانید دامنه خودتان را داشته‌باشید یا دامنه قبلی خود را به سایت متصل کنید.",
     colors: ["#FF9712", "#FFF659"],
@@ -30,7 +32,7 @@ const CardsData = [
   {
     id: 4,
     title: "سرعت بالا",
-    image: pic_2,
+    image: pic_4,
     description:
       "تیم پشتیبانی ما در تمام روزهای هفته از طریق تلفن و واتس‌اپ پاسخگوی شماست.",
     colors: ["#EEE047", "#FE5CDF"],
@@ -38,7 +40,7 @@ const CardsData = [
   {
     id: 5,
     title: "امنیت قوی",
-    image: pic_3,
+    image: pic_5,
     description:
       "تیم پشتیبانی ما در تمام روزهای هفته از طریق تلفن و واتس‌اپ پاسخگوی شماست.",
     colors: ["#D5B7F7", "#91CFFC"],

@@ -7,7 +7,10 @@
   font-size: 1.5vw;
   color: white;
 }
-
+.form-parent form{
+  display: flex;
+  flex-direction: column;
+}
 .form-parent input,
 .form-parent textarea {
   width: 100%;
@@ -15,13 +18,13 @@
   padding: 0.4vw;
   border-radius: 0.5vw;
   background-color: inherit;
-  margin: 0.8vh 0;
+  margin: 0.25vw 0;
   font-size: 1.2vw;
   color: #2ec5ff;
 }
 
 .form-parent textarea {
-  height: 33vh;
+  height: 20vw;
 }
 
 .form-parent input::placeholder,

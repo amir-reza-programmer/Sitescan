@@ -18,7 +18,7 @@ const Footer = () => {
           تهران، خیابان کارگر شمالی، پردیس دانشکده‌های فنی دانشگاه تهران
           <br></br> شتاب‌دهنده اینومکث
         </p>
-        <p className={styles.number}>021 - 12345678</p>
+        <p className={styles.number}>021 - 61113358</p>
       </div>
       <div>
         <img className={styles.icon} src={whatsapp}></img>

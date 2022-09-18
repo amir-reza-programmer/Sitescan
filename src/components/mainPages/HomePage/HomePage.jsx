@@ -14,6 +14,23 @@ const HomePage = () => {
   const headerText = "راهی آسان، مطمئن و کم هزینه";
   const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
 
+  const description = (
+    <p
+      style={{
+        width: "60vw",
+        textAlign: "center",
+        margin: "6vh auto 7vh auto",
+        fontWeight: "300",
+        color: "white",
+        fontSize: "1.4vw",
+      }}
+    >
+      اینترنت یک فرصت است برای کسب و کارها. داشتن یک وبسایت خوب می‌تواند اولین و
+      مهم ترین گام شما برای رشد و گسترش کسب و کارتان در اینترنت باشد. این کار را
+      به سایت اسکن بسپارید و بر مراحل بعدی گسترش کسب و کارتان تمرکز کنید.
+    </p>
+  );
+
   return (
     <Fragment>
       <Navbar active="home"></Navbar>
@@ -22,6 +39,7 @@ const HomePage = () => {
         headerText={headerText}
         headerText_2={headerText_2}
       ></Header>
+      {description}
       <DevSteps></DevSteps>
       <Cards></Cards>
       <Projects></Projects>
