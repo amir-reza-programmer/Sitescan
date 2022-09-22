@@ -7,10 +7,12 @@
   font-size: 1.5vw;
   color: white;
 }
-.form-parent form{
+
+.form-parent form {
   display: flex;
   flex-direction: column;
 }
+
 .form-parent input,
 .form-parent textarea {
   width: 100%;
@@ -18,7 +20,7 @@
   padding: 0.4vw;
   border-radius: 0.5vw;
   background-color: inherit;
-  margin: 0.25vw 0;
+  margin: 0.7vh 0;
   font-size: 1.2vw;
   color: #2ec5ff;
 }
@@ -33,18 +35,25 @@
   font-weight: 300;
   color: #2ec5ff;
 }
+
 .form-parent input:focus-visible,
 .form-parent textarea:focus-visible {
   outline: none;
 }
-.form-parent form input:last-of-type {
+
+.send_btn {
   width: 10vw;
   color: white;
-  background-color: #00A8E8;
+  background-color: #00a8e8;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
   font-weight: 300;
+  margin-top: 1vh;
   padding: 1vh 0;
   cursor: pointer;
+  border: none;
 }
-.form-parent form input:last-of-type:active {
+
+.send_btn:active {
   border-color: white;
 }

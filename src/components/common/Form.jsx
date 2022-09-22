@@ -1,53 +1,145 @@
+import { Fragment } from "react";
+import { ToastContainer, toast } from "react-toastify";
+
+import useInput from "../hooks/use-input";
+
+import "react-toastify/dist/ReactToastify.css";
+import toastStyle from "./Toastify.module.css";
 import styles from "./Form.module.css";
-import { useState } from "react";
+
+const isNotEmpty = (value) => value.trim() !== "";
+const isEmail = (value) =>
+  /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value);
 
 const Form = ({ title }) => {
-  const [enteredName, setEnteredName] = useState("");
-  const [enteredEmail, setEnteredEmail] = useState("");
-  const [enteredQuestion, setEnteredQuestion] = useState("");
+  const {
+    value: fullNameValue,
+    isValid: fullNameIsValid,
+    valueChangeHandler: fullNameChangeHandler,
+    reset: resetFullName,
+  } = useInput(isNotEmpty);
 
-  const nameHandler = (event) => {
-    setEnteredName(event.target.value);
+  const {
+    value: emailValue,
+    isValid: emailIsValid,
+    valueChangeHandler: emailChangeHandler,
+    reset: resetEmail,
+  } = useInput(isEmail);
+
+  const {
+    value: textValue,
+    isValid: textIsValid,
+    valueChangeHandler: textChangeHandler,
+    reset: resetText,
+  } = useInput(isNotEmpty);
+
+  let formIsValid = false;
+  if (fullNameIsValid && emailIsValid && textIsValid) {
+    formIsValid = true;
+  }
+
+  const formHandler = (event) => {
+    event.preventDefault();
+    if (!formIsValid) {
+      return;
+    }
+    resetFullName();
+    resetEmail();
+    resetText();
   };
-  const emailHandler = (event) => {
-    setEnteredEmail(event.target.value);
-  };
-  const questionHandler = (event) => {
-    setEnteredQuestion(event.target.value);
-  };
-  const formHandler = () => {
-    if (enteredName.trim().length >= 3 && enteredQuestion.trim().length >= 5) {
-      window.location.reload();
-      console.log("reloaded");
+
+  const handleClick = () => {
+    if (!fullNameIsValid) {
+      toast.error("لطفا نام و نام خانوادگی خود را وارد کنید", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: toastStyle.toastify_message,
+      });
+    } else if (!isNotEmpty(emailValue)) {
+      toast.error("لطفا ایمیل خود را وارد کنید", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: toastStyle.toastify_message,
+      });
+    } else if (!emailIsValid) {
+      toast.error("لطفا ایمیل خود را به درستی وارد کنید", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: toastStyle.toastify_message,
+      });
+    } else if (!textIsValid) {
+      toast.error("لطفا متن خود را وارد کنید", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: toastStyle.toastify_message,
+      });
+    } else {
+      toast.success("پیام شما با موفقیت ارسال شد", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: toastStyle.toastify_message,
+      });
     }
   };
+
   return (
-    <div className={styles["form-parent"]}>
-      <h2 className={styles.title}>{title}</h2>
-      <form onSubmit={formHandler} action="">
-        <input
-          value={enteredName}
-          onChange={nameHandler}
-          type="text"
-          placeholder="نام و نام خانوادگی"
-        />
-        <input
-          value={enteredEmail}
-          onChange={emailHandler}
-          type="email"
-          placeholder="آدرس ایمیل"
-        />
-        <textarea
-          name="Text1"
-          value={enteredQuestion}
-          onChange={questionHandler}
-          cols="40"
-          rows="5"
-          placeholder="متن سوال"
-        ></textarea>
-        <input type="submit" value="ارسال" />
-      </form>
-    </div>
+    <Fragment>
+      <ToastContainer />
+      <div className={styles["form-parent"]}>
+        <h2 className={styles.title}>{title}</h2>
+        <form onSubmit={formHandler}>
+          <input
+            type="text"
+            value={fullNameValue}
+            onChange={fullNameChangeHandler}
+            placeholder="نام و نام خانوادگی"
+          />
+          <input
+            type="email"
+            value={emailValue}
+            onChange={emailChangeHandler}
+            placeholder="آدرس ایمیل"
+          />
+          <textarea
+            value={textValue}
+            onChange={textChangeHandler}
+            placeholder="متن سوال"
+          ></textarea>
+          <button
+            className={styles.send_btn}
+            type="submit"
+            onClick={handleClick}
+          >
+            ارسال
+          </button>
+        </form>
+      </div>
+    </Fragment>
   );
 };
 
