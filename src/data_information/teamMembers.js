@@ -2,7 +2,7 @@ import Mehrab from "../images/TeamMembres/Mehrab Gheibi.jpg";
 import Parisa from "../images/TeamMembres/Parisa Gheibi.jpg";
 import Nima from "../images/TeamMembres/Nima Namazi1.jpg";
 import Niloofar from "../images/TeamMembres/Niloofar Sanjari.jpg";
-import tempUser from "../images/TeamMembres/TempUser.png";
+import AmirReza from "../images/TeamMembres/AmirReza Zare.jpg";
 
 const teamMembers = [
   {
@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     id: 1,
-    pic: tempUser,
+    pic: AmirReza,
     fullname: "امیررضا زارع",
     position: "Front-end developer",
     linkedin: "https://www.linkedin.com/in/amirrezaa-zare/",
