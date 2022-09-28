@@ -22,17 +22,17 @@ const DevSteps = () => {
 
       <div className={styles.bottom}>
         <div className={styles.step}>
-          <div className={styles.step__title}>پیاده‌سازی</div>
-          <p className={styles.step__description}>
-            برنامه نویسان ما طرح گرافیکی مورد تایید شما را به یک وبسایت واقعی
-            تبدیل می‌کنند.
-          </p>
-        </div>
-        <div className={styles.step}>
           <div className={styles.step__title}>طراحی پروتوتایپ</div>
           <p className={styles.step__description}>
             با توجه به نیازهای شما، نقشه کلی از ساختار و چیدمان صفحات طراحی
             خواهد شد.
+          </p>
+        </div>
+        <div className={styles.step}>
+          <div className={styles.step__title}>پیاده‌سازی</div>
+          <p className={styles.step__description}>
+            برنامه نویسان ما طرح گرافیکی مورد تایید شما را به یک وبسایت واقعی
+            تبدیل می‌کنند.
           </p>
         </div>
       </div>
