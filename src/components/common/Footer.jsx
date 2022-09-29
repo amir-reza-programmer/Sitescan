@@ -1,10 +1,7 @@
 import styles from "./Footer.module.css";
 
 import sitescanIcon from "../../images/SitescanIcon.svg";
-import linkedin from "../../images/Footer/Linkedin.svg";
-import instagram from "../../images/Footer/Instagram.svg";
-import telegram from "../../images/Footer/Telegram.svg";
-import whatsapp from "../../images/Footer/Whatsapp.svg";
+import socialMedia from "../../data_information/socialMedia";
 
 const Footer = () => {
   return (
@@ -21,10 +18,11 @@ const Footer = () => {
         <p className={styles.number}>021 - 61113358</p>
       </div>
       <div>
-        <img className={styles.icon} src={whatsapp}></img>
-        <img className={styles.icon} src={telegram}></img>
-        <img className={styles.icon} src={instagram}></img>
-        <img className={styles.icon} src={linkedin}></img>
+        {socialMedia.map((media) => (
+          <a href={media.link}>
+            <img className={styles.icon} src={media.pic}></img>
+          </a>
+        ))}
       </div>
     </div>
   );

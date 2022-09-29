@@ -11,7 +11,7 @@ const ProjectsSection = () => {
           <p className={styles.rtl_proj_title}>{project.title}</p>
           <p className={styles.rtl_proj_text}>{project.text}</p>
           <button className={styles.rtl_more_info_btn} type="button">
-            جزئیات بیشتر
+            مشاهده وبسایت
           </button>
         </div>
         <img src={project.pic}></img>
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
           <p className={styles.ltr_proj_title}>{project.title}</p>
           <p className={styles.ltr_proj_text}>{project.text}</p>
           <button className={styles.ltr_more_info_btn} type="button">
-            جزئیات بیشتر
+            مشاهده وبسایت
           </button>
         </div>
       </div>

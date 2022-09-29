@@ -6,7 +6,7 @@ import pic_5 from "../images/Cards/pic_5.svg";
 
 const CardsData = [
   {
-    id: 1,
+    id: 0,
     title: "طراحی واکنش‌گرا",
     image: pic_1,
     description:
@@ -14,7 +14,7 @@ const CardsData = [
     colors: ["#07DA89", "#5DF0FB"],
   },
   {
-    id: 2,
+    id: 1,
     title: "پشتیبانی کامل",
     image: pic_2,
     description:
@@ -22,7 +22,7 @@ const CardsData = [
     colors: ["#F48EDF", "#FF5F46"],
   },
   {
-    id: 3,
+    id: 2,
     title: "ثبت دامنه اختصاصی",
     image: pic_3,
     description:
@@ -30,7 +30,7 @@ const CardsData = [
     colors: ["#FF9712", "#FFF659"],
   },
   {
-    id: 4,
+    id: 3,
     title: "سرعت بالا",
     image: pic_4,
     description:
@@ -38,7 +38,7 @@ const CardsData = [
     colors: ["#EEE047", "#FE5CDF"],
   },
   {
-    id: 5,
+    id: 4,
     title: "امنیت قوی",
     image: pic_5,
     description:

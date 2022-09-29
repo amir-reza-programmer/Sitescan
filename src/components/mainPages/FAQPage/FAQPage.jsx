@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Navbar from "../../common/Navbar";
 import Header from "../../common/Header";
 import Form from "../../common/Form";
-import FAQ from "./FAQSection";
+import FAQSection from "./FAQSection";
 import JoinUs from "../../common/JoinsUs";
 import Footer from "../../common/Footer";
 
@@ -21,7 +21,7 @@ const FAQPage = () => {
         headerText={headerText}
         additionalClass={styles.faq_header_text}
       ></Header>
-      <FAQ></FAQ>
+      <FAQSection></FAQSection>
       <div className={styles.faq_from_align}>
         <Form title="از ما بپرسید:" />
       </div>
