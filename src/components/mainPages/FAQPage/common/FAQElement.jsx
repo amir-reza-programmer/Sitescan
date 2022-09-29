@@ -22,8 +22,7 @@ const FAQElement = (props) => {
     <div className={styles.faq} id={`faq_div${props.id}`}>
       <div className={styles.question_part}>
         <p className={styles.question_sign} onClick={showAnswerHandler}>
-          {/* {showAnswer ? "-" : "+"} */}
-          a
+          {showAnswer ? "-" : "+"}
         </p>
         <p className={styles.question_text}>{props.question}</p>
       </div>
