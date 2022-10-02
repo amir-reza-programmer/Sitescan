@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2vh;
-  height: 35vh;
-  padding: 5vh 2vh;
+  gap: 1.5vh;
+  height: 32vh;
+  padding: 3vh 2vh;
   border: solid transparent;
   border-radius: 3vw;
 }
@@ -14,13 +14,13 @@
 }
 
 .mobile_card_title {
-  font-size: 4.5vw;
+  font-size: 4.8vw;
   background-clip: text !important;
   color: transparent;
 }
 
 .mobile_card_description {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 300;
   text-align: center;
   color: white;
@@ -31,8 +31,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5vh;
-  height: 35vh;
+  gap: 1.5vh;
+  height: 40vh;
   max-width: 20vw;
   padding: 0 3vh 2vh;
   border: solid transparent;
@@ -40,7 +40,7 @@
 }
 
 .desk_card_img {
-  width: 7vw;
+  width: 7.5vw;
   margin-top: 2vh;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .desk_card_description {
-  font-size: 1.1vw;
+  font-size: 1vw;
   font-weight: 300;
   text-align: center;
   color: white;

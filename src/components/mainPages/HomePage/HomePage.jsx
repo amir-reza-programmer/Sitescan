@@ -20,7 +20,13 @@ const HomePage = () => {
   const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
 
   const description = (
-    <p className={styles.home_page_description}>
+    <p
+      className={
+        mobileView
+          ? styles.mobile_home_page_description
+          : styles.desk_home_page_description
+      }
+    >
       اینترنت یک فرصت است برای کسب و کارها. داشتن یک وبسایت خوب می‌تواند اولین و
       مهم ترین گام شما برای رشد و گسترش کسب و کارتان در اینترنت باشد. این کار را
       به سایت اسکن بسپارید و بر مراحل بعدی گسترش کسب و کارتان تمرکز کنید.
@@ -37,7 +43,7 @@ const HomePage = () => {
       ></Header>
       {description}
       {mobileView ? <DevSteps_Mobile /> : <DevSteps_Desktop />}
-      <Cards></Cards>
+      <Cards mobileView={mobileView}></Cards>
       <Projects></Projects>
       <JoinUs></JoinUs>
       <Footer></Footer>

@@ -1,10 +1,6 @@
-import { useSelector } from "react-redux";
-
 import styles from "./Card.module.css";
 
-const Card = ({ image, title, description, colors }) => {
-  const mobileView = useSelector((state) => state.mobile.mobileView);
-
+const Card = ({ image, title, description, colors, mobileView }) => {
   const backgroundStyle = {
     background: `linear-gradient(#013E6A, #013E6A) padding-box,
     linear-gradient(to bottom right, ${colors[0]}, ${colors[1]}) border-box`,
@@ -15,29 +11,27 @@ const Card = ({ image, title, description, colors }) => {
   return (
     <div
       style={backgroundStyle}
-      className={`${mobileView ? styles.mobile_card : styles.desk_card}`}
+      className={mobileView ? styles.mobile_card : styles.desk_card}
     >
       <img
-        className={`${
-          mobileView ? styles.mobile_card_img : styles.desk_card_img
-        }`}
+        className={mobileView ? styles.mobile_card_img : styles.desk_card_img}
         src={image}
         alt={title}
       />
       <span
         style={titleStyle}
-        className={`${
+        className={
           mobileView ? styles.mobile_card_title : styles.desk_card_title
-        }`}
+        }
       >
         {title}
       </span>
       <p
-        className={`${
+        className={
           mobileView
             ? styles.mobile_card_description
             : styles.desk_card_description
-        }`}
+        }
       >
         {description}
       </p>

@@ -1,13 +1,13 @@
 .mobile_cards_section {
-  margin: 8vh 15vw 10vh;
+  margin: 5vh 15vw 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2vh;
 }
 
-.cards_section {
-  margin: 10vh 15vw;
+.desk_cards_section {
+  margin: 15vh 15vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

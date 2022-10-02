@@ -1,7 +1,15 @@
-.home_page_description {
-  width: 60vw;
+.mobile_home_page_description {
+  width: 59vw;
+  margin: 5vh auto 7vh;
+  font-weight: 300;
+  color: white;
+  font-size: 3vw;
+}
+
+.desk_home_page_description {
+  width: 55vw;
   text-align: center;
-  margin: 6vh auto 7vh auto;
+  margin: 10vh auto 15vh;
   font-weight: 300;
   color: white;
   font-size: 1.4vw;
