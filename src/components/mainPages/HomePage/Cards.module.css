@@ -1,23 +1,15 @@
-.cards {
-  background-color: #003459;
+.mobile_cards_section {
+  margin: 8vh 15vw 10vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  padding: 0 15%;
-}
-.cards__top,
-.cards__bottom {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  direction: ltr;
+  gap: 2vh;
 }
 
-@media (max-width: 1000px) {
-  .cards {
-    padding: 0 10%;
-  }
+.cards_section {
+  margin: 10vh 15vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
 }

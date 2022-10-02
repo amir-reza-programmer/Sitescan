@@ -1,7 +1,9 @@
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-import HomePage from "./components/mainPages/HomePage/HomePage"
+import { mobileActions } from "./reduxStore/redux";
+import HomePage from "./components/mainPages/HomePage/HomePage";
 import AboutUsPage from "./components/mainPages/AboutUsPage/AboutUsPage";
 import ProjectsPage from "./components/mainPages/ProjectsPage/ProjectsPage";
 import FAQPage from "./components/mainPages/FAQPage/FAQPage";
@@ -10,24 +12,18 @@ import ContactUsPage from "./components/mainPages/ContactUsPage/ContactUsPage";
 import "./App.module.css";
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth);
+  const dispatch = useDispatch();
+
+  const windowSizeChangeHandler = () => {
+    dispatch(mobileActions.checkMobileView());
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
+    window.addEventListener("resize", windowSizeChangeHandler);
     return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
+      window.removeEventListener("resize", windowSizeChangeHandler);
     };
   }, []);
-
-  //const mobielView = width <= 768;   -> "it will be used in future progeressing."
-
-  // const [firstVisibility, setFirstVisibility] = useState(true);   -> "it will be used in future progeressing."
-  // const firstVisibilityIsGone = () => {
-  //   setFirstVisibility(false);
-  // };
 
   return (
     <Fragment>

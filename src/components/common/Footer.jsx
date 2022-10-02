@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
       <div>
         {socialMedia.map((media) => (
-          <a href={media.link}>
+          <a href={media.link} key={media.id}>
             <img className={styles.icon} src={media.pic}></img>
           </a>
         ))}

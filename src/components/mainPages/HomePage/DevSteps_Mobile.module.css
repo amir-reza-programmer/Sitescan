@@ -1,0 +1,54 @@
+.dev_steps {
+  display: flex;
+  margin: 8vh 20vw 0 25vw;
+  height: 43.5vh;
+}
+
+.number_line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 0.1vw;
+  background-color: #ffff;
+  height: 12vh;
+}
+
+.steps_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  height: 12.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin: 0 5vw 2vh 0;
+}
+
+.step_title {
+  color: #00a8e8;
+  font-size: 3.5vw;
+}
+
+.step_description {
+  font-weight: 300;
+  color: white;
+  font-size: 2.8vw;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  border: solid #ffff 0.1vh;
+  border-radius: 50%;
+  align-items: center;
+  width: 2.5vh;
+  height: 2.5vh;
+  color: white;
+  font-weight: 300;
+  font-size: 1.4vw;
+}
