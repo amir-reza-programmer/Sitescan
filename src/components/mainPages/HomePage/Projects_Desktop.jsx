@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import projects from "../../../data_information/projects";
 
-import styles from "./Projects.module.css";
+import styles from "./Projects_Desktop.module.css";
 import Project from "./common/Project";
 
-const Projects = () => {
+const Projects_Desktop = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <div className={styles.projects__top}>
-        <h2>پروژه‌های ما</h2>
+        <p>پروژه‌های ما</p>
       </div>
       <div className={styles.projects__bottom}>
         <div className={styles.items}>
@@ -48,4 +48,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects_Desktop;

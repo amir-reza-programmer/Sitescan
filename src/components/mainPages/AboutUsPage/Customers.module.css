@@ -1,23 +1,21 @@
-.customer_section {
+.customers_section {
+  display: flex;
+  flex-direction: column;
   background-color: #002036;
   padding-bottom: 8vh;
 }
 
 .title {
-  display: inline-block;
-  right: 50%;
-  font-size: 2.3vw;
-  padding-top: 5vh;
+  align-self: center;
   background-image: linear-gradient(to left, #0090c7, #9ce4ff);
   background-clip: text;
   color: transparent;
-  width: 100%;
-  text-align: center;
+  padding-top: 5vh;
+  font-size: 2.3vw;
 }
 
 .customers {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin: 5vh 10vw 0;
 }

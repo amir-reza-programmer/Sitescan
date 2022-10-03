@@ -4,14 +4,14 @@ import styles from "./Customers.module.css";
 
 const Customers = () => {
   return (
-    <section className={styles.customer_section}>
+    <div className={styles.customers_section}>
       <p className={styles.title}>مشتریان ما</p>
       <div className={styles.customers}>
         {customers.map((customer) => (
           <img key={customer.id} src={customer.pic}></img>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

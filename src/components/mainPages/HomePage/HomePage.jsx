@@ -6,7 +6,8 @@ import Header from "../../common/Header";
 import DevSteps_Desktop from "./DevSteps_Desktop";
 import DevSteps_Mobile from "./DevSteps_Mobile";
 import Cards from "./Cards";
-import Projects from "./Projects";
+import Projects_Desktop from "./Projects_Desktop";
+import Projects_Mobile from "./Projects_Mobile";
 import JoinUs from "../../common/JoinsUs";
 import Footer from "../../common/Footer";
 
@@ -44,7 +45,7 @@ const HomePage = () => {
       {description}
       {mobileView ? <DevSteps_Mobile /> : <DevSteps_Desktop />}
       <Cards mobileView={mobileView}></Cards>
-      <Projects></Projects>
+      {mobileView ? <Projects_Mobile /> : <Projects_Desktop />}
       <JoinUs></JoinUs>
       <Footer></Footer>
     </Fragment>
