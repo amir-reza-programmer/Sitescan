@@ -19,18 +19,5 @@
 }
 body {
   background-color: #003459;
-  background-attachment: fixed;
   overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 0.8rem;
-}
-
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #00a8e8;
 }

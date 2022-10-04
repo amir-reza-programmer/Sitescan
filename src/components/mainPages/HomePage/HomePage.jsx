@@ -20,12 +20,12 @@ const HomePage = () => {
   const headerText = "راهی آسان، مطمئن و کم هزینه";
   const headerText_2 = "برای ورود کسب و کارها به دنیای اینترنت";
 
-  const description = (
+  const topDescription = (
     <p
       className={
         mobileView
-          ? styles.mobile_home_page_description
-          : styles.desk_home_page_description
+          ? styles.mobile_page_description
+          : styles.desk_page_description
       }
     >
       اینترنت یک فرصت است برای کسب و کارها. داشتن یک وبسایت خوب می‌تواند اولین و
@@ -42,7 +42,7 @@ const HomePage = () => {
         headerText={headerText}
         headerText_2={headerText_2}
       ></Header>
-      {description}
+      {topDescription}
       {mobileView ? <DevSteps_Mobile /> : <DevSteps_Desktop />}
       <Cards mobileView={mobileView}></Cards>
       {mobileView ? <Projects_Mobile /> : <Projects_Desktop />}

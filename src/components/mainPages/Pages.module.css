@@ -1,4 +1,4 @@
-.mobile_home_page_description {
+.mobile_page_description {
   width: 59vw;
   margin: 5vh auto 7vh;
   font-weight: 300;
@@ -6,7 +6,7 @@
   font-size: 3vw;
 }
 
-.desk_home_page_description {
+.desk_page_description {
   width: 55vw;
   text-align: center;
   margin: 10vh auto 15vh;
