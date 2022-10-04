@@ -1,4 +1,12 @@
-.toastify_message {
+.mobile_toastify_message {
+  width: 60vw;
+  margin-top: 3vh;
+  font-size: 3vw;
+  direction: rtl;
+}
+
+.desk_toastify_message {
+  width: 20vw;
   font-size: 1.2vw;
   direction: rtl;
 }

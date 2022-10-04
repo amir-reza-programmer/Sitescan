@@ -1,7 +1,9 @@
 import { Fragment } from "react";
+import { useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 
 import useInput from "../hooks/use-input";
+import scrollHandler from "./scrollHandler";
 
 import "react-toastify/dist/ReactToastify.css";
 import toastStyle from "./Toastify.module.css";
@@ -12,6 +14,8 @@ const isEmail = (value) =>
   /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value);
 
 const Form = ({ title }) => {
+  const mobileView = useSelector((state) => state.mobile.mobileView);
+
   const {
     value: fullNameValue,
     isValid: fullNameIsValid,
@@ -46,9 +50,14 @@ const Form = ({ title }) => {
     resetFullName();
     resetEmail();
     resetText();
+    scrollHandler("top");
   };
 
   const handleClick = () => {
+    const toastifyMessage = mobileView
+      ? toastStyle.mobile_toastify_message
+      : toastStyle.desk_toastify_message;
+
     if (!fullNameIsValid) {
       toast.error("لطفا نام و نام خانوادگی خود را وارد کنید", {
         position: "top-right",
@@ -58,7 +67,7 @@ const Form = ({ title }) => {
         pauseOnHover: true,
         draggable: false,
         progress: undefined,
-        className: toastStyle.toastify_message,
+        className: toastifyMessage,
       });
     } else if (!isNotEmpty(emailValue)) {
       toast.error("لطفا ایمیل خود را وارد کنید", {
@@ -69,7 +78,7 @@ const Form = ({ title }) => {
         pauseOnHover: true,
         draggable: false,
         progress: undefined,
-        className: toastStyle.toastify_message,
+        className: toastifyMessage,
       });
     } else if (!emailIsValid) {
       toast.error("لطفا ایمیل خود را به درستی وارد کنید", {
@@ -80,7 +89,7 @@ const Form = ({ title }) => {
         pauseOnHover: true,
         draggable: false,
         progress: undefined,
-        className: toastStyle.toastify_message,
+        className: toastifyMessage,
       });
     } else if (!textIsValid) {
       toast.error("لطفا متن خود را وارد کنید", {
@@ -91,7 +100,7 @@ const Form = ({ title }) => {
         pauseOnHover: true,
         draggable: false,
         progress: undefined,
-        className: toastStyle.toastify_message,
+        className: toastifyMessage,
       });
     } else {
       toast.success("پیام شما با موفقیت ارسال شد", {
@@ -102,7 +111,7 @@ const Form = ({ title }) => {
         pauseOnHover: true,
         draggable: false,
         progress: undefined,
-        className: toastStyle.toastify_message,
+        className: toastifyMessage,
       });
     }
   };

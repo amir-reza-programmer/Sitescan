@@ -19,8 +19,8 @@
 }
 
 .project_element {
-  min-width: 70vw;
-  margin: 5vh 8vw 5vh 0;
+  min-width: 60vw;
+  margin: 4vh 8vw 4vh 0;
   border: 0.3vw solid #0090c7;
   border-radius: 4vw;
   color: #fff;
@@ -34,21 +34,21 @@
   border-top-right-radius: 4vw;
 }
 
-.more_info_btn{
-    position: relative;
-    display: inline-block;
-    left: -90%;
-    top: 0.5vh;
+.more_info_btn {
+  position: relative;
+  display: inline-block;
+  left: -90%;
+  top: 0.5vh;
 }
 
 .project_desc {
-    display: inline-block;
+  display: inline-block;
   font-weight: 300;
   font-size: 3.5vw;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .project_title {
   font-size: 4.2vw;
-  margin: 1.3vh 3vw;
+  margin: 1vh 3vw;
 }

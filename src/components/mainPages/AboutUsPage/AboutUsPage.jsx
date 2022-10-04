@@ -44,7 +44,7 @@ const AboutUsPage = () => {
       {topDescription}
       <Descriptions mobileView={mobileView}></Descriptions>
       <TeamMembers></TeamMembers>
-      <Customers></Customers>
+      <Customers mobileView={mobileView}></Customers>
       <JoinUs></JoinUs>
       <Footer></Footer>
     </Fragment>
