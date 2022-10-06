@@ -49,7 +49,7 @@ const ProjectsSection = () => {
           src={project.pic}
           alt="project_pic"
         ></img>
-        <button className={styles.more_info_btn_mobile} type="button">
+        <button onClick={()=>{window.location.reload()}} className={styles.more_info_btn_mobile} type="button">
           مشاهده وبسایت
         </button>
       </div>

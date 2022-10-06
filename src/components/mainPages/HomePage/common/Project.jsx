@@ -21,7 +21,7 @@ const Project = ({ index, active, title, icon, onChangeIndex }) => {
         </div>
       </div>
       <div className={styles.project__left}>
-        <div className={styles.details}>مشاهده وبسایت</div>
+        <div onClick={()=>{window.location.reload()}} className={styles.details}>مشاهده وبسایت</div>
       </div>
     </div>
   );
