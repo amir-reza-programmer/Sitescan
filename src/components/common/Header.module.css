@@ -5,13 +5,32 @@
   background-color: #013e6a;
 }
 
+.header_mobile{
+  display: flex;
+    justify-content: space-between;
+    background-color: #013e6a;
+    flex-direction: column;
+    padding-top: 20vw;
+}
+
 .text {
   padding: 35vh 12vw 0 0;
   font-size: 1.6vw;
   color: #00a8e8;
 }
 
+.text_mobile {
+  font-size: 4.5vw;
+    text-align: center;
+    color: #00a8e8;
+}
+
 .img {
   width: 60vw;
   margin-top: 10vh;
+}
+.img_mobile {
+  width: 60vw;
+    margin: 10vw auto;
+
 }

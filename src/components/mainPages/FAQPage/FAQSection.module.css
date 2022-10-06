@@ -4,3 +4,11 @@
   background-color: #003459;
   margin: 12vh 8vw;
 }
+.faq_section_mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #003459;
+  margin: 5vh 8vw;
+
+}
+

@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useSelector } from "react-redux";
 
 import Navbar from "../../common/Navbar";
 import Header from "../../common/Header";
@@ -11,6 +12,8 @@ import styles from "../Pages.module.css";
 import FAQHeader from "../../../images/Headers/FAQHeader.svg";
 
 const FAQPage = () => {
+  const mobileView = useSelector((state) => state.mobile.mobileView);
+
   const headerText = "سوالات متداول";
 
   return (
@@ -19,7 +22,7 @@ const FAQPage = () => {
       <Header
         headerImage={FAQHeader}
         headerText={headerText}
-        additionalClass={styles.faq_header_text}
+        additionalClass={!mobileView ? styles.faq_header_text : ""}
       ></Header>
       <FAQSection></FAQSection>
       <div className={styles.faq_from_align}>
