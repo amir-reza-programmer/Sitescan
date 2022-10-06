@@ -1,6 +1,6 @@
 import styles from "./Project.module.css";
 
-const Project = ({ index, active, title, onChangeIndex }) => {
+const Project = ({ index, active, title, icon, onChangeIndex }) => {
   const backgroundStyle = {
     backgroundColor: `#${active ? "004373" : "002A48"}`,
   };
@@ -14,7 +14,7 @@ const Project = ({ index, active, title, onChangeIndex }) => {
       className={styles.project}
     >
       <div className={styles.project__right}>
-        <div className={styles.square}></div>
+      <img className={styles.icon} src={icon} alt="" />
         <div className={styles["title-parent"]}>
           <div>طراحی سایت</div>
           <div className={styles.title}>{title}</div>

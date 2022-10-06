@@ -33,6 +33,7 @@ const Projects_Desktop = () => {
               index={index}
               active={activeIndex === index}
               title={project.title}
+              icon={project.icon}
               onChangeIndex={changIndex}
             />
           ))}

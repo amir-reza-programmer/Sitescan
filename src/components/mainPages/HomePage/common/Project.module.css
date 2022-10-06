@@ -16,6 +16,11 @@
     margin: 1vh;
     border: solid #00A8E8;
 }
+.icon{
+    width: 3vw;
+    height: 3vw;
+    margin: 0.5vw;
+}
 .title-parent{
     color: white;
     display: flex;
