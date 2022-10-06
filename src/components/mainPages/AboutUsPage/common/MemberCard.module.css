@@ -9,13 +9,27 @@
   border: 2px solid;
   border-color: #007aa8;
 }
+.member_card_mobile{
+      height: 37vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #013e6a;
+      border-radius: 0.7rem;
+      border: 2px solid;
+      border-color: #007aa8;
 
+}
 .member_img {
   height: 5vw;
   width: 5vw;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: inline-block;
+}
+.member_img_mobile{
+  height: 30vw;
+  width: 30vw;
 }
 
 .info {
@@ -34,7 +48,15 @@
   color: #2ec5ff;
 }
 
+.text_mobile{
+  font-size: 3vw;
+}
+
 .links {
   display: flex;
   column-gap: 1.2vw;
+}
+.links_mobile{
+  display: flex;
+  column-gap: 3vw;
 }

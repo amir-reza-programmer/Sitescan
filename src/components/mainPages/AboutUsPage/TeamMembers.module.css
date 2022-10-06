@@ -1,23 +1,35 @@
 .team_section {
-  display: flex;
-  flex-direction: column;
   background-color: #003459;
   padding-bottom: 8vh;
 }
 
 .title {
-  align-self: center;
+  display: inline-block;
+  right: 50%;
+  font-size: 2.3vw;
+  padding-top: 5vh;
   background-image: linear-gradient(to left, #0090c7, #9ce4ff);
   background-clip: text;
   color: transparent;
-  padding-top: 5vh;
-  font-size: 2.3vw;
+  width: 100%;
+  text-align: center;
+}
+.title_mobile{
+  font-size: 4.5vw;
 }
 
-.team_members {
+.team_members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+    margin: 5vh 12vw 0;
+}
+.team_members_mobile{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.2vw;
-  margin: 5vh 12vw 0;
+  gap: 5vw;
+  margin: 3vh 12vw 0;
+  flex-direction: column;
 }
