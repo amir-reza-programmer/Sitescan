@@ -25,8 +25,8 @@ const FAQPage = () => {
         additionalClass={!mobileView ? styles.faq_header_text : ""}
       ></Header>
       <FAQSection mobileView={mobileView}></FAQSection>
-      <div className={styles.faq_from_align}>
-        <Form title="از ما بپرسید:" />
+      <div className={mobileView? null: styles.faq_from_align}>
+        <Form title={`از ما بپرسید${mobileView? "": ":"}`} />
       </div>
       <JoinUs></JoinUs>
       <Footer></Footer>

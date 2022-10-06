@@ -6,6 +6,8 @@
 }
 .faq_mobile{
   margin-bottom: 2vh;
+  padding: 0 1vw;
+  min-width: 85vw;
 }
 .question_part {
   display: flex;

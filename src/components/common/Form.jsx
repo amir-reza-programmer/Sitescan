@@ -119,8 +119,8 @@ const Form = ({ title }) => {
   return (
     <Fragment>
       <ToastContainer />
-      <div className={styles["form-parent"]}>
-        <h2 className={styles.title}>{title}</h2>
+      <div className={styles["form-parent"] + ` ${mobileView? styles["form-parent_mobile"]: null}`}>
+        <h2 className={mobileView? styles.title_mobile: styles.title}>{title}</h2>
         <form onSubmit={formHandler}>
           <input
             type="text"
@@ -140,7 +140,7 @@ const Form = ({ title }) => {
             placeholder="متن سوال"
           ></textarea>
           <button
-            className={styles.send_btn}
+            className={mobileView? styles.send_btn_mobile:styles.send_btn}
             type="submit"
             onClick={handleClick}
           >
