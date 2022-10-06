@@ -1,10 +1,8 @@
 import FAQElement from "./common/FAQElement";
 import faqList from "../../../data_information/faqList";
-import { useSelector } from "react-redux";
 import styles from "./FAQSection.module.css";
 
-const FAQSection = () => {
-  const mobileView = useSelector((state) => state.mobile.mobileView);
+const FAQSection = ({mobileView}) => {
 
   return (
     <section

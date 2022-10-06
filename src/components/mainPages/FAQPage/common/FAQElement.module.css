@@ -4,20 +4,34 @@
   border: 2px solid #007aa8;
   border-radius: 0.5rem;
 }
-
+.faq_mobile{
+  margin-bottom: 2vh;
+}
 .question_part {
   display: flex;
   color: #2ec5ff;
+}
+.question_part_mobile{
+  min-height: 13vw;
+  align-items: center;
 }
 
 .question_sign {
   padding: 0.7vh 0.7vw;
   font-size: 1.7vw;
 }
+.question_sign_mobile{
+  padding: 0.7vh 2vw;
+  font-size: 4.5vw;
+}
 
 .question_text {
   padding: 1.4vh 0.3vw;
   font-size: 1.3vw;
+}
+.question_text_mobile{
+  padding: 1.4vh 0.3vw;
+    font-size: 3.3vw;
 }
 
 .answer_text_container{
@@ -30,6 +44,10 @@
   font-size: 1.1vw;
   font-weight: 300;
   color: white;
+}
+.answer_text_mobile{
+  font-size: 3vw;
+  padding: 1vh 3.5vw 3vh;
 }
 
 .show_answer {

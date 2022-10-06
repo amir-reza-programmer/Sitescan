@@ -24,7 +24,7 @@ const FAQPage = () => {
         headerText={headerText}
         additionalClass={!mobileView ? styles.faq_header_text : ""}
       ></Header>
-      <FAQSection></FAQSection>
+      <FAQSection mobileView={mobileView}></FAQSection>
       <div className={styles.faq_from_align}>
         <Form title="از ما بپرسید:" />
       </div>
