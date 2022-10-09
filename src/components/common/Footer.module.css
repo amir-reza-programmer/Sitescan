@@ -11,7 +11,7 @@
   column-gap: 0.8vw;
   margin-bottom: 3vh;
 }
-.icon_mobile{
+.icon_mobile {
   width: 8vw;
 }
 .title_text {
@@ -19,13 +19,13 @@
   font-weight: 300;
   color: white;
 }
-.title_text_mobile{
+.title_text_mobile {
   font-size: 4vw;
-    FONT-VARIANT: JIS83;
-    color: white;
-    display: flex;
-    /* align-content: center; */
-    align-items: center;
+  font-variant: JIS83;
+  color: white;
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
 }
 
 .address_number {
@@ -37,7 +37,7 @@
   font-weight: 300;
   margin-bottom: 1vh;
 }
-.address_mobile{
+.address_mobile {
   font-size: 3.5vw;
 }
 .number {
@@ -46,7 +46,7 @@
   margin-bottom: 3vh;
   direction: ltr;
 }
-.number_mobile{
+.number_mobile {
   font-size: 3.5vw;
   font-weight: 300;
   margin-bottom: 3vh;
@@ -57,7 +57,7 @@
   width: 2.8vw;
   margin: 0 1vw;
 }
-.link_icon_mobile{
+.link_icon_mobile {
   width: 8vw;
   margin: 0 1vw;
 }

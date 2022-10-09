@@ -14,14 +14,21 @@ const Project = ({ index, active, title, icon, onChangeIndex }) => {
       className={styles.project}
     >
       <div className={styles.project__right}>
-      <img className={styles.icon} src={icon} alt="" />
+        <img className={styles.icon} src={icon} alt="" />
         <div className={styles["title-parent"]}>
           <div>طراحی سایت</div>
           <div className={styles.title}>{title}</div>
         </div>
       </div>
       <div className={styles.project__left}>
-        <div onClick={()=>{window.location.reload()}} className={styles.details}>مشاهده وبسایت</div>
+        <div
+          onClick={() => {
+            window.location.reload();
+          }}
+          className={styles.details}
+        >
+          مشاهده وبسایت
+        </div>
       </div>
     </div>
   );

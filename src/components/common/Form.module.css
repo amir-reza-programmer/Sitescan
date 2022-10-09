@@ -1,7 +1,7 @@
 .form-parent {
   width: 30vw;
 }
-.form-parent_mobile{
+.form-parent_mobile {
   width: 85vw;
   margin: auto;
 }
@@ -10,7 +10,7 @@
   font-size: 1.5vw;
   color: white;
 }
-.title_mobile{
+.title_mobile {
   margin-bottom: 4vw;
   font-size: 3.5vw;
   color: white;
@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
 }
-.form-parent_mobile form{
-    align-items: center;
+.form-parent_mobile form {
+  align-items: center;
 }
 
 .form-parent input,
@@ -37,7 +37,7 @@
   color: #2ec5ff;
 }
 .form-parent_mobile input,
-.form-parent_mobile textarea{
+.form-parent_mobile textarea {
   padding: 1vw;
   margin: 0.8vw 0;
   font-size: 3vw;
@@ -45,7 +45,7 @@
 .form-parent textarea {
   height: 20vw;
 }
-.form-parent_mobile textarea{
+.form-parent_mobile textarea {
   height: 35vw;
 }
 
@@ -56,7 +56,7 @@
   color: #2ec5ff;
 }
 .form-parent_mobile input::placeholder,
-.form-parent_mobile textarea::placeholder{
+.form-parent_mobile textarea::placeholder {
   font-size: 3vw;
 }
 
@@ -77,17 +77,17 @@
   cursor: pointer;
   border: none;
 }
-.send_btn_mobile{
-      color: white;
-      background-color: #00a8e8;
-      border-radius: 0.5vw;
-      font-size: 3.5vw;
-      font-weight: 300;
-      margin-top: 1vh;
-      padding: 1.5vw 10vw;
-      cursor: pointer;
-      border: none;
-      margin-top: 4.5vw;
+.send_btn_mobile {
+  color: white;
+  background-color: #00a8e8;
+  border-radius: 0.5vw;
+  font-size: 3.5vw;
+  font-weight: 300;
+  margin-top: 1vh;
+  padding: 1.5vw 10vw;
+  cursor: pointer;
+  border: none;
+  margin-top: 4.5vw;
 }
 .send_btn:active,
 .send_btn_mobile:active {

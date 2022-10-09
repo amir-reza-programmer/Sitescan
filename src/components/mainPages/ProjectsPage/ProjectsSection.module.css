@@ -11,8 +11,12 @@
 
 .project {
   display: flex;
-  justify-content: space-between;
+  gap: 5vw;
   margin-bottom: 15vh;
+}
+
+.img{
+  width: 50vw;
 }
 
 .rtl_header_title {
@@ -28,7 +32,7 @@
 }
 
 .rtl_proj_text {
-  margin-left: 7vw;
+  width: 34vw;
   font-size: 1vw;
   font-weight: 300;
   color: white;
@@ -38,7 +42,7 @@
   font-size: 1.1vw;
   font-weight: 300;
   margin-top: 15vh;
-  padding: 1.2vh 1.6vw;
+  padding: 1.1vh 1.6vw;
   color: white;
   background-color: #00a8e8;
   border: none;
@@ -47,7 +51,6 @@
 }
 
 .ltr_header_title {
-  margin-right: 5vw;
   font-size: 1.1vw;
   font-weight: 300;
   color: white;
@@ -55,12 +58,12 @@
 
 .ltr_proj_title {
   font-size: 1.5vw;
-  margin: 2vh 5vw 4vh;
+  margin: 2vh 0 4vh;
   color: white;
 }
 
 .ltr_proj_text {
-  margin: 0 5vw 0 2vw;
+  width: 34vw;
   font-size: 1vw;
   font-weight: 300;
   color: white;
@@ -69,7 +72,7 @@
 .ltr_more_info_btn {
   font-size: 1.1vw;
   font-weight: 300;
-  margin: 15vh 5vw 0 0;
+  margin-top: 15vh;
   padding: 1.2vh 1.6vw;
   color: white;
   background-color: #00a8e8;

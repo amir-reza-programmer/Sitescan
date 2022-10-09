@@ -15,7 +15,7 @@ const ProjectsSection = () => {
             مشاهده وبسایت
           </button>
         </div>
-        <img src={project.pic}></img>
+        <img className={styles.img} src={project.pic}></img>
       </div>
     );
   };
@@ -23,7 +23,7 @@ const ProjectsSection = () => {
   const ltrMode = (project) => {
     return (
       <div className={styles.project} key={project.id}>
-        <img src={project.pic}></img>
+        <img className={styles.img} src={project.pic}></img>
         <div>
           <p className={styles.ltr_header_title}>طراحی سایت</p>
           <p className={styles.ltr_proj_title}>{project.title}</p>
