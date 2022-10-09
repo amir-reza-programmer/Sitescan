@@ -20,7 +20,7 @@
 
 .project_element {
   min-width: 60vw;
-  margin: 4vh 8vw 4vh 0;
+  margin: 4vh 4vw 4vh 4vw;
   border: 0.3vw solid #0090c7;
   border-radius: 4vw;
   color: #fff;
@@ -39,6 +39,7 @@
   display: inline-block;
   left: -90%;
   top: 0.5vh;
+  cursor: pointer;
 }
 
 .project_desc {

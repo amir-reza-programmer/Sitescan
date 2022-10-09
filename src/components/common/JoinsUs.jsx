@@ -1,5 +1,8 @@
-import styles from "./JoinUs.module.css";
 import { useSelector } from "react-redux";
+
+import scrollHandler from "./scrollHandler";
+
+import styles from "./JoinUs.module.css";
 
 const JoinUs = () => {
   const mobileView = useSelector((state) => state.mobile.mobileView);
@@ -13,14 +16,14 @@ const JoinUs = () => {
       ) : (
         <p className={styles.text}>می‌خواهید در این مسیر همراه ما باشید؟</p>
       )}
-
-      <a href="">
-        <button
-          className={styles.btn + ` ${mobileView ? styles.btn_mobile : null}`}
-        >
-          به ما بپیوندید
-        </button>
-      </a>
+      <button
+        className={styles.btn + ` ${mobileView ? styles.btn_mobile : null}`}
+        onClick={() => {
+          scrollHandler("top");
+        }}
+      >
+        به ما بپیوندید
+      </button>
     </div>
   );
 };

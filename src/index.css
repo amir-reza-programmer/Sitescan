@@ -23,13 +23,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 0.8vw;
 }
 
-/* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #00a8e8;
-} */
+}

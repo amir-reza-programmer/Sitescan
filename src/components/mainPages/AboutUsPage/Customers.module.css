@@ -7,8 +7,13 @@
 
 .customers {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  margin: 5vh 10vw 0;
+  margin: 6vh 10vw 0;
+}
+
+.hover{
+  cursor: pointer;
 }
 
 .mobile_title {

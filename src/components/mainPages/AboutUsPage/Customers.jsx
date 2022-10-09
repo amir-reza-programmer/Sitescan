@@ -10,11 +10,13 @@ const Customers = ({ mobileView }) => {
       </p>
       <div className={styles.customers}>
         {customers.map((customer) => (
-          <img
-            className={mobileView ? styles.mobile_img : styles.desk_img}
-            key={customer.id}
-            src={customer.pic}
-          ></img>
+          <a className={styles.hover} href={customer.link}>
+            <img
+              className={mobileView ? styles.mobile_img : styles.desk_img}
+              key={customer.id}
+              src={customer.pic}
+            ></img>
+          </a>
         ))}
       </div>
     </div>
