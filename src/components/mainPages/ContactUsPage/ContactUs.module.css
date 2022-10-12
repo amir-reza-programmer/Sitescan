@@ -1,4 +1,4 @@
-.contact-us {
+.contact_us {
     display: flex;
     padding-top: 10vh;
     justify-content: center;
@@ -6,6 +6,15 @@
     gap: 13vw;
     margin: 10vh auto 2vh auto;
 }
+.contact_us_mobile{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vw;
+    justify-content: center;
+    align-items: center;
+    gap: 13vw;
+    margin: 10vh auto 2vh auto;
+}  
 /* .right {
     max-width: 35vw;
 }
@@ -19,11 +28,25 @@
     font-weight: 300;
     font-size: 1.3vw;
 }
-
-.map iframe{
+.contact_mobile p{
+    color: white;
+    text-align: center;
+    direction: ltr;
+    font-weight: 300;
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+}
+.map{
     border: solid 0.2vw #007AA8;
     border-radius: 5px;
     width: 30vw;
     height: 19vw;
+    margin-top: 1vw;
+}
+.map_mobile{
+    border: solid 0.2vw #007AA8;
+    border-radius: 5px;
+    width: 85vw;
+    height: 55vw;
     margin-top: 1vw;
 }
