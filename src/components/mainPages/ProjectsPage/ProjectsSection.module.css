@@ -36,6 +36,8 @@
   font-size: 1vw;
   font-weight: 300;
   color: white;
+  text-align: justify;
+  word-spacing: -0.05em;
 }
 
 .rtl_more_info_btn {
@@ -67,6 +69,8 @@
   font-size: 1vw;
   font-weight: 300;
   color: white;
+  text-align: justify;
+  word-spacing: -0.05em;
 }
 
 .ltr_more_info_btn {
@@ -121,6 +125,8 @@
   color: white;
   text-align: center;
   width: 80vw;
+  text-align: justify;
+  word-spacing: -0.05em;
 }
 .proj_pic_mobile{
   width: 80vw;

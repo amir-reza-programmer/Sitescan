@@ -4,6 +4,8 @@
   font-weight: 300;
   color: white;
   font-size: 3vw;
+  text-align: justify;
+  word-spacing: -0.05em;
 }
 
 .desk_page_description {
