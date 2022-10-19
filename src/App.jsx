@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 import { mobileActions } from "./reduxStore/redux";
-import UseScrollToTop from "./components/hooks/UseScrollToTop";
+import UseScrollToTop from "./components/hooks/use-scroll-to-top";
 import HomePage from "./components/mainPages/HomePage/HomePage";
 import AboutUsPage from "./components/mainPages/AboutUsPage/AboutUsPage";
 import ProjectsPage from "./components/mainPages/ProjectsPage/ProjectsPage";
@@ -29,15 +29,15 @@ function App() {
   return (
     <Fragment>
       <BrowserRouter>
-      <UseScrollToTop>
-        <Routes>
-          <Route path="home" element={<HomePage />} />
-          <Route path="about_us" element={<AboutUsPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="faq" element={<FAQPage />} />
-          <Route path="contact_us" element={<ContactUsPage />} />
-          <Route path="/" element={<Navigate replace to="home" />} />
-        </Routes>
+        <UseScrollToTop>
+          <Routes>
+            <Route path="home" element={<HomePage />} />
+            <Route path="about_us" element={<AboutUsPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="faq" element={<FAQPage />} />
+            <Route path="contact_us" element={<ContactUsPage />} />
+            <Route path="/" element={<Navigate replace to="home" />} />
+          </Routes>
         </UseScrollToTop>
       </BrowserRouter>
     </Fragment>
