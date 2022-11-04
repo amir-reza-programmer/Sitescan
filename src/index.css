@@ -1,12 +1,12 @@
 @font-face {
   font-family: "IRANSansXFaNum";
-  src: URL("./fonts/IRANSansXFaNum-Regular.ttf") format("truetype");
+  src: URL("./fonts/IRANSansXFaNum-Regular.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "IRANSansXFaNum";
-  src: URL("./fonts/IRANSansXFaNum-Bold.ttf") format("truetype");
+  src: URL("./fonts/IRANSansXFaNum-Bold.woff") format("woff");
   font-weight: 400;
 }
 
