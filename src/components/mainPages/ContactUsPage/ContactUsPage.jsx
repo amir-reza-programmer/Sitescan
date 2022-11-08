@@ -5,7 +5,7 @@ import ContactUs from "./ContactUs";
 import JoinUs from "../../common/JoinsUs";
 import Footer from "../../common/Footer";
 
-const ContactUsPage = ({ mobileView }) => {
+const ContactUsPage = () => {
   return (
     <Fragment>
       <Navbar active="contact_us" />

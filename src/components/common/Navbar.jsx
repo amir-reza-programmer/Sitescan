@@ -6,10 +6,15 @@ import MenuButton from "../../images/Navbar/MenuButton.svg";
 import Icon from "../../images/SitescanIcon.svg";
 import IranFlag from "../../images/IranFlag.svg";
 
+import { useNavigate } from "react-router-dom";
+
 const Navbar = ({ active }) => {
   const mobileView = useSelector((state) => state.mobile.mobileView);
   const menu = useRef();
   const menuButton = useRef();
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     /**
      * Alert if clicked on outside of element
@@ -65,6 +70,13 @@ const Navbar = ({ active }) => {
       setIsOpen(false);
     }
   };
+
+  const navOptionClick = (path) => {
+    setIsOpen(!isOpened);
+    setTimeout(() => {
+      navigate(`/${path}`);
+    }, 400);
+  };
   const links = (
     // <Collapse isOpened={isOpened}>
     <div
@@ -80,41 +92,69 @@ const Navbar = ({ active }) => {
       <ul>
         <li onClick={clickDropDownLi}>
           <div>
-            <Link style={itemColor("contact_us", "FF9712")} to="/contact_us">
+            <span
+              style={itemColor("contact_us", "FF9712")}
+              onClick={() => {
+                navOptionClick("contact_us");
+              }}
+            >
               تماس با ما
-            </Link>
+            </span>
             {blureShape("contact_us", "FF9712")}
           </div>
         </li>
         <li>
           <div>
-            <Link style={itemColor("faq", "00FF87")} to="/faq">
+            <span
+              style={itemColor("faq", "00FF87")}
+              onClick={() => {
+                navOptionClick("faq");
+              }}
+            >
               سوالات متداول
-            </Link>
+            </span>
             {blureShape("faq", "00FF87")}
           </div>
         </li>
         <li>
           <div>
-            <Link style={itemColor("projects", "FFE585")} to="/projects">
+            <span
+              style={itemColor("projects", "FFE585")}
+              onClick={() => {
+                navOptionClick("projects");
+              }}
+            >
               پروژه‌ها
-            </Link>
+            </span>
             {blureShape("projects", "FFE585")}
           </div>
         </li>
         <li>
           <div>
-            <Link style={itemColor("about_us", "FF51EB")} to="/about_us">
+            <span
+              style={itemColor("about_us", "FF51EB")}
+              onClick={() => {
+                navOptionClick("about_us");
+              }}
+            >
               درباره ما
-            </Link>
+            </span>
             {blureShape("about_us", "FF51EB")}
           </div>
         </li>
         <li>
           <div>
-            <Link style={itemColor("home", "2EC5FF")} to="/home">
+            <span
+              style={itemColor("home", "2EC5FF")}
+              onClick={() => {
+                setIsOpen(!isOpened);
+                setTimeout(() => {
+                  navigate("/home");
+                }, 2000);
+              }}
+            >
               خانه
-            </Link>
+            </span>
             {blureShape("home", "2EC5FF")}
           </div>
         </li>
