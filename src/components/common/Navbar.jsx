@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useSelector } from "react-redux";
 import MenuButton from "../../images/Navbar/MenuButton.svg";
@@ -12,6 +11,7 @@ const Navbar = ({ active }) => {
   const mobileView = useSelector((state) => state.mobile.mobileView);
   const menu = useRef();
   const menuButton = useRef();
+  const activeEl = useRef(null);
 
   const navigate = useNavigate();
 
@@ -41,7 +41,7 @@ const Navbar = ({ active }) => {
     if (active === name) {
       return {
         display: "inline-block",
-        backgroundColor: `#${color}`,
+        backgroundColor: `${color}`,
       };
     }
     return {};
@@ -49,14 +49,11 @@ const Navbar = ({ active }) => {
   const itemColor = (name, color) => {
     if (active === name) {
       return {
-        color: `#${color}`,
+        color: color,
       };
     }
     return {};
   };
-  useEffect(() => {
-    console.log("now isopened ", isOpened);
-  }, [isOpened]);
   const blureShape = (name, color) => {
     if (!mobileView) {
       return (
@@ -65,22 +62,55 @@ const Navbar = ({ active }) => {
     }
     return null;
   };
-  const clickDropDownLi = () => {
-    if (mobileView) {
-      setIsOpen(false);
+
+  const navOptions = [
+    {
+      id: 0,
+      title: "contact_us",
+      text: "تماس با ما",
+      color: "#FF9712",
+    },
+    {
+      id: 1,
+      title: "faq",
+      text: "سوالات متداول",
+      color: "#00FF87",
+    },
+    {
+      id: 2,
+      title: "projects",
+      text: "پروژه‌ها",
+      color: "#FFE585",
+    },
+    {
+      id: 3,
+      title: "about_us",
+      text: "درباره ما",
+      color: "#FF51EB",
+    },
+    {
+      id: 4,
+      title: "home",
+      text: "خانه",
+      color: "#2EC5FF",
+    },
+  ];
+
+  const navOptionClick = (path, e) => {
+    setIsOpen(!isOpened);
+    if (active !== path) {
+      if (mobileView) {
+        activeEl.current.style.color = "white";
+        setTimeout(() => {
+          navigate(`/${path}`);
+        }, 400);
+      } else {
+        navigate(`/${path}`);
+      }
     }
   };
-
-  const navOptionClick = (path) => {
-    setIsOpen(!isOpened);
-    setTimeout(() => {
-      navigate(`/${path}`);
-    }, 400);
-  };
   const links = (
-    // <Collapse isOpened={isOpened}>
     <div
-      ref={menu}
       className={
         mobileView
           ? isOpened
@@ -90,78 +120,27 @@ const Navbar = ({ active }) => {
       }
     >
       <ul>
-        <li onClick={clickDropDownLi}>
-          <div>
-            <span
-              style={itemColor("contact_us", "FF9712")}
-              onClick={() => {
-                navOptionClick("contact_us");
-              }}
-            >
-              تماس با ما
-            </span>
-            {blureShape("contact_us", "FF9712")}
-          </div>
-        </li>
-        <li>
-          <div>
-            <span
-              style={itemColor("faq", "00FF87")}
-              onClick={() => {
-                navOptionClick("faq");
-              }}
-            >
-              سوالات متداول
-            </span>
-            {blureShape("faq", "00FF87")}
-          </div>
-        </li>
-        <li>
-          <div>
-            <span
-              style={itemColor("projects", "FFE585")}
-              onClick={() => {
-                navOptionClick("projects");
-              }}
-            >
-              پروژه‌ها
-            </span>
-            {blureShape("projects", "FFE585")}
-          </div>
-        </li>
-        <li>
-          <div>
-            <span
-              style={itemColor("about_us", "FF51EB")}
-              onClick={() => {
-                navOptionClick("about_us");
-              }}
-            >
-              درباره ما
-            </span>
-            {blureShape("about_us", "FF51EB")}
-          </div>
-        </li>
-        <li>
-          <div>
-            <span
-              style={itemColor("home", "2EC5FF")}
-              onClick={() => {
-                setIsOpen(!isOpened);
-                setTimeout(() => {
-                  navigate("/home");
-                }, 2000);
-              }}
-            >
-              خانه
-            </span>
-            {blureShape("home", "2EC5FF")}
-          </div>
-        </li>
+        {navOptions.map((navOption) => (
+          <li key={navOption.id}>
+            <div>
+              <span
+                ref={active === navOption.title ? activeEl : null}
+                className={styles[navOption.title]}
+                style={itemColor(navOption.title, navOption.color)}
+                onClick={(e) => {
+                  navOptionClick(navOption.title, e);
+                }}
+              >
+                {navOption.text}
+              </span>
+              {blureShape(navOption.title, navOption.color)}
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
-    // </Collapse>
   );
+
   return (
     <div className={styles["nav-parent"]}>
       <nav className={mobileView ? styles.nav_mobile : styles.nav}>

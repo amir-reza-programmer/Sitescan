@@ -26,7 +26,11 @@
   padding: 0.7vh 2vw;
   font-size: 4.5vw;
 }
-
+.faq,
+.faq_mobile
+{
+  cursor: pointer;
+}
 .question_text {
   padding: 1.4vh 0.3vw;
   font-size: 1.3vw;
@@ -35,7 +39,6 @@
   padding: 1.4vh 0.3vw;
     font-size: 3.3vw;
 }
-
 .answer_text_container{
   overflow: hidden;
   transition: height 0.4s ease-in-out;

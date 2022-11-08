@@ -88,6 +88,7 @@
     justify-content: center;
 }
 span{
+    cursor: pointer;
     text-decoration: none;
     color: white;
     font-weight: 300;
@@ -256,4 +257,25 @@ span{
     .drop_down__closed li {
         font-size: 4vw;
     }
+  }
+
+
+
+
+  /* hover colors */
+
+  .contact_us:hover{
+    color: #FF9712;
+  }
+  .faq:hover{
+    color: #00FF87;
+  }
+  .projects:hover{
+    color: #FFE585;
+  }
+  .about_us:hover{
+    color: #FF51EB;
+  }
+  .home:hover{
+    color: #2EC5FF;
   }
