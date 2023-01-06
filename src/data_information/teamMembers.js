@@ -5,16 +5,9 @@ import AmirReza from "../images/TeamMembres/AmirReza Zare.jpg";
 import Mehrab from "../images/TeamMembres/Mehrab Gheibi.jpg";
 
 const teamMembers = [
+  
   {
     id: 0,
-    pic: Niloofar,
-    fullname: "نیلوفر سنجری",
-    position: "Graphic designer",
-    linkedin: "https://www.linkedin.com/in/niloofar-sanjari-623b03236",
-    github: "",
-  },
-  {
-    id: 1,
     pic: Nima,
     fullname: "نیما نمازی",
     position: "UI/UX designer",
@@ -22,7 +15,7 @@ const teamMembers = [
     github: "",
   },
   {
-    id: 2,
+    id: 1,
     pic: Parisa,
     fullname: "پریسا غیبی",
     position: "Product manager",
@@ -30,15 +23,15 @@ const teamMembers = [
     github: "",
   },
   {
-    id: 3,
+    id: 2,
     pic: AmirReza,
     fullname: "امیررضا زارع",
     position: "Front-end developer",
-    linkedin: "https://www.linkedin.com/in/amirrezaa-zare/",
+    linkedin: "https://www.linkedin.com/in/amir-reza-zare/",
     github: "https://github.com/amir-reza-programmer",
   },
   {
-    id: 4,
+    id: 3,
     pic: Mehrab,
     fullname: "مهراب غیبی",
     position: "Front-end developer",
