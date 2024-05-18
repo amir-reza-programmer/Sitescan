@@ -7,12 +7,12 @@ const socialMedia = [
   {
     id: 0,
     pic: whatsapp,
-    link: "https://wa.me/+989372862193",
+    link: "https://wa.me/+98",
   },
   {
     id: 1,
     pic: telegram,
-    link: "https://telegram.me/+989372862193",
+    link: "https://telegram.me/+98",
   },
   {
     id: 2,

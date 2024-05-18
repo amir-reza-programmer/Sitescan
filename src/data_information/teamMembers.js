@@ -1,25 +1,22 @@
-import Niloofar from "../images/TeamMembres/Niloofar Sanjari.jpg";
-import Nima from "../images/TeamMembres/Nima Namazi1.jpg";
-import Parisa from "../images/TeamMembres/Parisa Gheibi.jpg";
 import AmirReza from "../images/TeamMembres/AmirReza Zare.jpg";
-import Mehrab from "../images/TeamMembres/Mehrab Gheibi.jpg";
+
 
 const teamMembers = [
-  
+
   {
     id: 0,
-    pic: Nima,
-    fullname: "نیما نمازی",
+    pic: AmirReza,
+    fullname: "نجف نیازی",
     position: "UI/UX designer",
-    linkedin: "http://www.linkedin.com/in/nimanamazi",
+    linkedin: "http://www.linkedin.com/",
     github: "",
   },
   {
     id: 1,
-    pic: Parisa,
-    fullname: "پریسا غیبی",
+    pic: AmirReza,
+    fullname: "امیررضا توکلی",
     position: "Product manager",
-    linkedin: "https://www.linkedin.com/in/parisagheibi",
+    linkedin: "https://www.linkedin.com/",
     github: "",
   },
   {
@@ -32,11 +29,10 @@ const teamMembers = [
   },
   {
     id: 3,
-    pic: Mehrab,
-    fullname: "مهراب غیبی",
+    pic: AmirReza,
+    fullname: "رضا امیری",
     position: "Front-end developer",
-    linkedin: "https://www.linkedin.com/in/mehrab-gheibi-988bb3174/",
-    github: "https://github.com/VigilantV",
+    linkedin: "https://www.linkedin.com/",
   },
 ];
 
